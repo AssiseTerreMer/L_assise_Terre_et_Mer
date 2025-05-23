@@ -61,3 +61,31 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 
 
+// Ouvrir modale avec image agrandie du diapo
+function openModal(src, alt) {
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const captionText = document.getElementById('caption');
+
+    modal.style.display = "block";
+    modalImg.src = src;
+    modalImg.alt = alt;
+    captionText.textContent = alt || "";
+}
+
+// Fermer la modale
+function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = "none";
+}
+
+// Au chargement, ajouter un clic à chaque image des diaporamas uniquement
+document.addEventListener('DOMContentLoaded', () => {
+    const diapoImages = document.querySelectorAll('.slideshow-container img');
+    diapoImages.forEach(img => {
+        img.style.cursor = "pointer";
+        img.addEventListener('click', () => openModal(img.src, img.alt));
+    });
+});
+
+
