@@ -1,146 +1,150 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'assise Terre & Mer</title>
-    <link rel="icon" href="photo/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="a.css">
-    <script src="photo.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'assise Terre & Mer</title>
+  <link rel="icon" href="photo/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="a.css">
+  <script src="photo.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <img src="photo/logo.png" alt="Logo" class="logo">
-            <h1>L'assise Terre & Mer</h1>
-        </div>
-        <nav>
-            <ul class="header-nav">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="photo.html">Réalisation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="header-top">
+      <img src="photo/logo.png" alt="Logo" class="logo">
+      <h1>L'assise Terre & Mer</h1>
+    </div>
+    <nav>
+      <ul class="header-nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="photo.html">Réalisation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
     <br><br><br>
-    <main>
-        <section class="photo">
-        <h2>Housse de bimini</h2>
-            <div class="slideshow-container">
-                <div class="mySlides1 fade"><img src="photo/bimini.jpg" alt="Housse de Bimini" style="width:100%"></div>
-                <div class="mySlides1 fade"><img src="photo/bimini2.jpg" alt="Housse de Bimini" style="width:100%"></div>
-                <div class="mySlides1 fade"><img src="photo/bimini3.jpg" alt="Housse de Bimini" style="width:100%"></div>
-                <div class="mySlides1 fade"><img src="photo/bimini4.jpg" alt="Housse de Bimini" style="width:100%"></div>
-                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-            </div>
-            <div style="text-align:center">
-                <span class="dot1" onclick="currentSlide(1, 1)"></span>
-                <span class="dot1" onclick="currentSlide(2, 1)"></span>
-                <span class="dot1" onclick="currentSlide(3, 1)"></span>
-                <span class="dot1" onclick="currentSlide(4, 1)"></span>
-            </div>
-        </section>
-        <br><br><br>
 
-        <section class="photo">
-            <h2>Housse de bain de soleil</h2>
-            <div class="slideshow-container">
-                <div class="mySlides2 fade"><img src="photo/housse.jpg" alt="Housse de bain de soleil pour un Targa 44" style="width:100%"></div>
-                <div class="mySlides2 fade"><img src="photo/housse2.jpg" alt="Housse de bain de soleil pour un Targa 44" style="width:100%"></div>
-                <div class="mySlides2 fade"><img src="photo/housse3.jpg" alt="Housse de bain de soleil pour un Targa 44" style="width:100%"></div>
-                <div class="mySlides2 fade"><img src="photo/housse4.jpg" alt="Housse de bain de soleil pour un Targa 44" style="width:100%"></div>
-                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-            </div>
-            <div style="text-align:center">
-                <span class="dot2" onclick="currentSlide(1, 2)"></span>
-                <span class="dot2" onclick="currentSlide(2, 2)"></span>
-                <span class="dot2" onclick="currentSlide(3, 2)"></span>
-                <span class="dot2" onclick="currentSlide(4, 2)"></span>
-            </div>
-            <p>Housse de bain de soleil pour un Targa 44 🛥. Finition velcro et sangle pour l’attacher.</p>
-        </section>
-        <br><br><br>
+    <!-- Diaporamas -->
+    <section class="photo">
+      <h2>Housse de bimini</h2>
+      <div class="slideshow-container">
+        <div class="mySlides1 fade"><img src="photo/bimini.jpg" alt="Housse de Bimini" onclick="openModal(this)"></div>
+        <div class="mySlides1 fade"><img src="photo/bimini2.jpg" alt="Housse de Bimini" onclick="openModal(this)"></div>
+        <div class="mySlides1 fade"><img src="photo/bimini3.jpg" alt="Housse de Bimini" onclick="openModal(this)"></div>
+        <div class="mySlides1 fade"><img src="photo/bimini4.jpg" alt="Housse de Bimini" onclick="openModal(this)"></div>
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+      <div class="dots" style="text-align:center">
+        <span class="dot1" onclick="currentSlide(1, 1)"></span>
+        <span class="dot1" onclick="currentSlide(2, 1)"></span>
+        <span class="dot1" onclick="currentSlide(3, 1)"></span>
+        <span class="dot1" onclick="currentSlide(4, 1)"></span>
+      </div>
+    </section>
 
-        <section class="photo">
-            <h2>Sellerie sur mesure pour voilier OVNI 41</h2>
-            <div class="slideshow-container">
-                <div class="mySlides3 fade"><img src="photo/voilier.jpg" alt="Sellerie sur mesure pour voilier OVNI 41" style="width:100%"></div>
-                <div class="mySlides3 fade"><img src="photo/voilier2.jpg" alt="Sellerie sur mesure pour voilier OVNI 41" style="width:100%"></div>
-                <div class="mySlides3 fade"><img src="photo/voilier3.jpg" alt="Sellerie sur mesure pour voilier OVNI 41" style="width:100%"></div>
-                <div class="mySlides3 fade"><img src="photo/voilier5.jpg" alt="Sellerie sur mesure pour voilier OVNI 41" style="width:100%"></div>
-                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-            </div>
-            <div style="text-align:center">
-                <span class="dot3" onclick="currentSlide(1, 3)"></span>
-                <span class="dot3" onclick="currentSlide(2, 3)"></span>
-                <span class="dot3" onclick="currentSlide(3, 3)"></span>
-                <span class="dot3" onclick="currentSlide(4, 3)"></span>
-            </div>
-            <p>Coussins déhoussables, adaptés au milieu marin ⚓️.</p>
-        </section>
-        <br><br><br>
-
-        <section class="photo">
-            <h2>Tapisserie</h2>
-            <div class="slideshow-container">
-                <div class="mySlides4 fade"><img src="photo/voltaire.JPG" alt="Voltaire" style="width:100%"></div>
-                <div class="mySlides4 fade"><img src="photo/voltaireA.JPG" alt="Voltaire" style="width:100%"></div>
-                <div class="mySlides4 fade"><img src="photo/repose.JPG" alt="Repose-pied" style="width:100%"></div>
-                <div class="mySlides4 fade"><img src="photo/reposeA.JPG" alt="Repose-pied" style="width:100%"></div>
-                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
-            </div>
-            <div style="text-align:center">
-                <span class="dot4" onclick="currentSlide(1, 4)"></span>
-                <span class="dot4" onclick="currentSlide(2, 4)"></span>
-                <span class="dot4" onclick="currentSlide(3, 4)"></span>
-                <span class="dot4" onclick="currentSlide(4, 4)"></span>
-            </div>
-            <p>Rénovation d’un voltaire et d’un repose-pied.</p>
-        </section> 
-		<br><br><br>
-		<section class="photo">
-            <h2>Mes réalisations en tapisserie d'ameublement</h2>
-            <div class="slideshow-container">
-                <div class="mySlides5 fade"><img src="photo/1.png" alt="" style="width:100%"></div>
-                <div class="mySlides5 fade"><img src="photo/2.png" alt="" style="width:100%"></div>
-                <div class="mySlides5 fade"><img src="photo/3.png" alt="" style="width:100%"></div>
-                <div class="mySlides5 fade"><img src="photo/4.png" alt="" style="width:100%"></div>
-		<div class="mySlides5 fade"><img src="photo/5.PNG" alt="" style="width:100%"></div>
-		<div class="mySlides5 fade"><img src="photo/6.PNG" alt="" style="width:100%"></div>
-                <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
-            </div>
-            <div style="text-align:center">
-                <span class="dot5" onclick="currentSlide(1, 6)"></span>
-                <span class="dot5" onclick="currentSlide(2, 6)"></span>
-                <span class="dot5" onclick="currentSlide(3, 6)"></span>
-                <span class="dot5" onclick="currentSlide(4, 6)"></span>
-		<span class="dot5" onclick="currentSlide(5, 6)"></span>
-		<span class="dot5" onclick="currentSlide(6, 6)"></span>
-            </div>
-            <p>Différentes rénovations faites</p>
-        </section>
-    </main>
     <br><br><br>
-    <footer>
-        <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61572527185595" target="_blank">Mon Facebook</a> |
-            <a href="https://www.instagram.com/l.assise.terre.et.mer/" target="_blank">Mon Instagram</a>
-        </div>
-        <p>&copy; 2025 L'assise Terre & Mer - Tous droits réservés.</p>
-    </footer>
-	
-		<!-- Fenêtre modale pour agrandir l'image du diapo -->
-	<div id="modal" class="modal">
-	  <span class="close" onclick="closeModal()">&times;</span>
-	  <img class="modal-content" id="modal-img" alt="Image agrandie">
-	  <div id="caption"></div>
-	</div>
-	
+    <section class="photo">
+      <h2>Housse de bain de soleil</h2>
+      <div class="slideshow-container">
+        <div class="mySlides2 fade"><img src="photo/housse.jpg" alt="Housse bain de soleil" onclick="openModal(this)"></div>
+        <div class="mySlides2 fade"><img src="photo/housse2.jpg" alt="Housse bain de soleil" onclick="openModal(this)"></div>
+        <div class="mySlides2 fade"><img src="photo/housse3.jpg" alt="Housse bain de soleil" onclick="openModal(this)"></div>
+        <div class="mySlides2 fade"><img src="photo/housse4.jpg" alt="Housse bain de soleil" onclick="openModal(this)"></div>
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+      <div class="dots" style="text-align:center">
+        <span class="dot2" onclick="currentSlide(1, 2)"></span>
+        <span class="dot2" onclick="currentSlide(2, 2)"></span>
+        <span class="dot2" onclick="currentSlide(3, 2)"></span>
+        <span class="dot2" onclick="currentSlide(4, 2)"></span>
+      </div>
+      <p>Housse de bain de soleil pour un Targa 44 🛥. Finition velcro et sangle pour l’attacher.</p>
+    </section>
 
+    <br><br><br>
+    <section class="photo">
+      <h2>Sellerie sur mesure pour voilier OVNI 41</h2>
+      <div class="slideshow-container">
+        <div class="mySlides3 fade"><img src="photo/voilier.jpg" alt="Sellerie voilier" onclick="openModal(this)"></div>
+        <div class="mySlides3 fade"><img src="photo/voilier2.jpg" alt="Sellerie voilier" onclick="openModal(this)"></div>
+        <div class="mySlides3 fade"><img src="photo/voilier3.jpg" alt="Sellerie voilier" onclick="openModal(this)"></div>
+        <div class="mySlides3 fade"><img src="photo/voilier5.jpg" alt="Sellerie voilier" onclick="openModal(this)"></div>
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+      </div>
+      <div class="dots" style="text-align:center">
+        <span class="dot3" onclick="currentSlide(1, 3)"></span>
+        <span class="dot3" onclick="currentSlide(2, 3)"></span>
+        <span class="dot3" onclick="currentSlide(3, 3)"></span>
+        <span class="dot3" onclick="currentSlide(4, 3)"></span>
+      </div>
+      <p>Coussins déhoussables, adaptés au milieu marin ⚓️.</p>
+    </section>
+
+    <br><br><br>
+    <section class="photo">
+      <h2>Tapisserie</h2>
+      <div class="slideshow-container">
+        <div class="mySlides4 fade"><img src="photo/voltaire.JPG" alt="Voltaire" onclick="openModal(this)"></div>
+        <div class="mySlides4 fade"><img src="photo/voltaireA.JPG" alt="Voltaire" onclick="openModal(this)"></div>
+        <div class="mySlides4 fade"><img src="photo/repose.JPG" alt="Repose-pied" onclick="openModal(this)"></div>
+        <div class="mySlides4 fade"><img src="photo/reposeA.JPG" alt="Repose-pied" onclick="openModal(this)"></div>
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+      </div>
+      <div class="dots" style="text-align:center">
+        <span class="dot4" onclick="currentSlide(1, 4)"></span>
+        <span class="dot4" onclick="currentSlide(2, 4)"></span>
+        <span class="dot4" onclick="currentSlide(3, 4)"></span>
+        <span class="dot4" onclick="currentSlide(4, 4)"></span>
+      </div>
+      <p>Rénovation d’un voltaire et d’un repose-pied.</p>
+    </section>
+
+    <br><br><br>
+    <section class="photo">
+      <h2>Mes réalisations en tapisserie d'ameublement</h2>
+      <div class="slideshow-container">
+        <div class="mySlides5 fade"><img src="photo/1.png" alt="" onclick="openModal(this)"></div>
+        <div class="mySlides5 fade"><img src="photo/2.png" alt="" onclick="openModal(this)"></div>
+        <div class="mySlides5 fade"><img src="photo/3.png" alt="" onclick="openModal(this)"></div>
+        <div class="mySlides5 fade"><img src="photo/4.png" alt="" onclick="openModal(this)"></div>
+        <div class="mySlides5 fade"><img src="photo/5.PNG" alt="" onclick="openModal(this)"></div>
+        <div class="mySlides5 fade"><img src="photo/6.PNG" alt="" onclick="openModal(this)"></div>
+        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+      </div>
+      <div class="dots" style="text-align:center">
+        <span class="dot5" onclick="currentSlide(1, 5)"></span>
+        <span class="dot5" onclick="currentSlide(2, 5)"></span>
+        <span class="dot5" onclick="currentSlide(3, 5)"></span>
+        <span class="dot5" onclick="currentSlide(4, 5)"></span>
+        <span class="dot5" onclick="currentSlide(5, 5)"></span>
+        <span class="dot5" onclick="currentSlide(6, 5)"></span>
+      </div>
+      <p>Différentes rénovations faites</p>
+    </section>
+
+    <br><br><br>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61572527185595" target="_blank">Mon Facebook</a> |
+      <a href="https://www.instagram.com/l.assise.terre.et.mer/" target="_blank">Mon Instagram</a>
+    </div>
+    <p>&copy; 2025 L'assise Terre & Mer - Tous droits réservés.</p>
+  </footer>
+
+  <!-- Fenêtre modale pour agrandir les images -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Image agrandie">
+    <div id="caption"></div>
+  </div>
 </body>
 </html>
